@@ -1,0 +1,16 @@
+<h1>JWT Auth - Angular App with dotnet Core API</h1>
+
+<br>
+<div *ngIf="isUserAuthenticated()" style="color:blue;">
+  <h2>
+    You are now in session..
+  </h2>
+</div>
+
+<br>
+<ul>
+  <li  *ngIf="isUserAuthenticated()"><a routerLink="/users">Users</a></li>
+  <li *ngIf="!isUserAuthenticated()"><span>Login to get users list:</span></li>
+  <li *ngIf="!isUserAuthenticated()"><a routerLink="/login">Login</a></li>
+  <li *ngIf="isUserAuthenticated()"><a (click)="logOut()">Logout</a></li>
+</ul>

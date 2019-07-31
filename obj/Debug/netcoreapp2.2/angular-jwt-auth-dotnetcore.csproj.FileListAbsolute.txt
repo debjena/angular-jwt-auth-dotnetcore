@@ -1,0 +1,14 @@
+C:\Users\djena3\source\repos\angular-jwt-auth-dotnetcore\bin\Debug\netcoreapp2.2\angular-jwt-auth-dotnetcore.deps.json
+C:\Users\djena3\source\repos\angular-jwt-auth-dotnetcore\bin\Debug\netcoreapp2.2\angular-jwt-auth-dotnetcore.runtimeconfig.json
+C:\Users\djena3\source\repos\angular-jwt-auth-dotnetcore\bin\Debug\netcoreapp2.2\angular-jwt-auth-dotnetcore.runtimeconfig.dev.json
+C:\Users\djena3\source\repos\angular-jwt-auth-dotnetcore\bin\Debug\netcoreapp2.2\angular-jwt-auth-dotnetcore.dll
+C:\Users\djena3\source\repos\angular-jwt-auth-dotnetcore\bin\Debug\netcoreapp2.2\angular-jwt-auth-dotnetcore.pdb
+C:\Users\djena3\source\repos\angular-jwt-auth-dotnetcore\obj\Debug\netcoreapp2.2\angular-jwt-auth-dotnetcore.csprojAssemblyReference.cache
+C:\Users\djena3\source\repos\angular-jwt-auth-dotnetcore\obj\Debug\netcoreapp2.2\angular-jwt-auth-dotnetcore.csproj.CoreCompileInputs.cache
+C:\Users\djena3\source\repos\angular-jwt-auth-dotnetcore\obj\Debug\netcoreapp2.2\angular-jwt-auth-dotnetcore.RazorAssemblyInfo.cache
+C:\Users\djena3\source\repos\angular-jwt-auth-dotnetcore\obj\Debug\netcoreapp2.2\angular-jwt-auth-dotnetcore.RazorAssemblyInfo.cs
+C:\Users\djena3\source\repos\angular-jwt-auth-dotnetcore\obj\Debug\netcoreapp2.2\angular-jwt-auth-dotnetcore.AssemblyInfoInputs.cache
+C:\Users\djena3\source\repos\angular-jwt-auth-dotnetcore\obj\Debug\netcoreapp2.2\angular-jwt-auth-dotnetcore.AssemblyInfo.cs
+C:\Users\djena3\source\repos\angular-jwt-auth-dotnetcore\obj\Debug\netcoreapp2.2\angular-jwt-auth-dotnetcore.RazorTargetAssemblyInfo.cache
+C:\Users\djena3\source\repos\angular-jwt-auth-dotnetcore\obj\Debug\netcoreapp2.2\angular-jwt-auth-dotnetcore.dll
+C:\Users\djena3\source\repos\angular-jwt-auth-dotnetcore\obj\Debug\netcoreapp2.2\angular-jwt-auth-dotnetcore.pdb
