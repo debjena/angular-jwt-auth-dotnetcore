@@ -26,8 +26,8 @@ namespace angular_jwt_auth_dotnetcore {
                     ValidateLifetime = true,
                     ValidateIssuerSigningKey = true,
 
-                    ValidIssuer = "http://localhost:5000",
-                    ValidAudience = "http://localhost:5000",
+                    ValidIssuer = "https://debjena.github.io",
+                    ValidAudience = "https://debjena.github.io",
                     IssuerSigningKey = new SymmetricSecurityKey (Encoding.UTF8.GetBytes ("DebKey@321@secret"))//make sure key length big
                     };
                 });
