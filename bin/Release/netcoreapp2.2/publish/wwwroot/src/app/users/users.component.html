@@ -1,0 +1,7 @@
+<h1>Users</h1>
+<ul>
+  <li><a routerLink="/">Back</a></li>
+  <li *ngIf="isUserAuthenticated()"><a style="cursor: pointer;text-decoration: underline" (click)="logOut()">Logout</a></li>
+  <br><br>
+  <li *ngFor="let u of users">{{ u }}</li>
+</ul>
