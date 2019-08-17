@@ -13,8 +13,7 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
 using Microsoft.IdentityModel.Tokens;
-using Microsoft.OpenApi.Models;
-
+using Swashbuckle.AspNetCore.Swagger;
 
 namespace angular_jwt_auth_dotnetcore {
     public class Startup {
@@ -31,9 +30,10 @@ namespace angular_jwt_auth_dotnetcore {
             services.ConfigureDbContext (Configuration);
             services.AddMvc ().SetCompatibilityVersion (CompatibilityVersion.Version_2_2);
              // Register the Swagger generator, defining 1 or more Swagger documents
-            services.AddSwaggerGen(c =>
+            services.AddSwaggerGen(options =>
             {
-                c.SwaggerDoc("v1", new OpenApiInfo { Title = "My API", Version = "v1" });
+                options.SwaggerDoc("v1", new Info { Title = "My API", Version = "V1" });
+                options.OperationFilter<SwaggerHeaderFilter>();
             });
         }
 
@@ -47,8 +47,10 @@ namespace angular_jwt_auth_dotnetcore {
             }
             app.UseAuthentication();
             app.UseCors("AllowCORS");
+            app.UseMvc ();
+
             //app.UseHttpsRedirection();
-              // Enable middleware to serve generated Swagger as a JSON endpoint.
+            // Enable middleware to serve generated Swagger as a JSON endpoint.
             app.UseSwagger();
             // Enable middleware to serve swagger-ui (HTML, JS, CSS, etc.),
             // specifying the Swagger JSON endpoint.
@@ -56,7 +58,6 @@ namespace angular_jwt_auth_dotnetcore {
             {
              c.SwaggerEndpoint("/swagger/v1/swagger.json", "My API V1");
             });
-            app.UseMvc ();
         }
     }
 }
