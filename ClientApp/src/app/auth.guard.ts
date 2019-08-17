@@ -23,7 +23,10 @@ export class AuthGuard implements CanActivate {
         console.log(expirationDate);
         return true;
       }
+      else{
+        localStorage.removeItem("jwt");
       this.router.navigate(["login"]);
+      }
       return false;
   }
   

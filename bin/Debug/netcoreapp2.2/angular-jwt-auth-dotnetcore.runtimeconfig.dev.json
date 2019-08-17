@@ -1,9 +1,9 @@
 {
   "runtimeOptions": {
     "additionalProbingPaths": [
-      "C:\\Users\\djena3\\.dotnet\\store\\|arch|\\|tfm|",
-      "C:\\Users\\djena3\\.nuget\\packages",
-      "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+      "/home/sa/.dotnet/store/|arch|/|tfm|",
+      "/home/sa/.nuget/packages",
+      "/usr/share/dotnet/sdk/NuGetFallbackFolder"
     ]
   }
 }

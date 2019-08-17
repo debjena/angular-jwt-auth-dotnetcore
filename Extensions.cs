@@ -6,6 +6,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.IdentityModel.Tokens;
 
+
 namespace angular_jwt_auth_dotnetcore {
     public static class Extensions {
         public static void ConfigureCORS(this IServiceCollection services) {
@@ -13,7 +14,7 @@ namespace angular_jwt_auth_dotnetcore {
             {
                 options.AddPolicy("AllowCORS", builder =>
                 {
-                builder.AllowAnyOrigin().AllowAnyHeader().AllowAnyMethod().AllowCredentials().Build();
+                builder.AllowAnyOrigin().AllowAnyHeader().AllowAnyMethod();//.AllowCredentials().Build();
                 });
             });
         }
@@ -25,9 +26,8 @@ namespace angular_jwt_auth_dotnetcore {
                     ValidateAudience = true,
                     ValidateLifetime = true,
                     ValidateIssuerSigningKey = true,
-
-                    ValidIssuer = "https://debjena.github.io",
-                    ValidAudience = "https://debjena.github.io",
+                    ValidIssuer = "http://localhost:5000",
+                    ValidAudience = "http://localhost:5000",
                     IssuerSigningKey = new SymmetricSecurityKey (Encoding.UTF8.GetBytes ("DebKey@321@secret"))//make sure key length big
                     };
                 });

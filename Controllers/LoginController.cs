@@ -34,10 +34,10 @@ namespace angular_jwt_auth_dotnetcore.Controllers {
                     var signinCredentials = new SigningCredentials (secretKey, SecurityAlgorithms.HmacSha256);
 
                     var tokeOptions = new JwtSecurityToken (
-                        issuer: "https://debjena.github.io",
-                        audience: "https://debjena.github.io",
+                        issuer: "http://localhost:5000",
+                        audience: "http://localhost:5000",
                         claims : new List<Claim> (),
-                        expires : DateTime.Now.AddMinutes (1),
+                        expires : DateTime.Now.AddMinutes (5),
                         signingCredentials : signinCredentials
                     );
 
