@@ -32,7 +32,7 @@ namespace angular_jwt_auth_dotnetcore {
              // Register the Swagger generator, defining 1 or more Swagger documents
             services.AddSwaggerGen(options =>
             {
-                options.SwaggerDoc("v1", new Info { Title = "My API", Version = "V1" });
+                options.SwaggerDoc("v1", new Info { Title = "JWT API", Version = "v1" });
                 options.OperationFilter<SwaggerHeaderFilter>();
             });
         }
@@ -56,7 +56,7 @@ namespace angular_jwt_auth_dotnetcore {
             // specifying the Swagger JSON endpoint.
             app.UseSwaggerUI(c =>
             {
-             c.SwaggerEndpoint("/swagger/v1/swagger.json", "My API V1");
+               c.SwaggerEndpoint("/swagger/v1/swagger.json", "JWT API v1");
             });
         }
     }
